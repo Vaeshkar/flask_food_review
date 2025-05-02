@@ -13,8 +13,6 @@ Your mission is to create a RESTful API using Flask (Python) that interacts with
 * Python
 * Flask
 * PostgreSQL
-* SQLAlchemy (if ORM is used)
-* Docker (optional for deployment)
 * Postman (for API testing)
 
 ---
