@@ -1,6 +1,6 @@
 from flask import Blueprint, request, jsonify, g # Import Blueprint, request, jsonify, g from flask.  
-from ..utils.auth_utils import require_auth # This will add the require_auth function, cool: two levels deep
-from ..db import get_connection # this will add the get_connection function
+from utils.auth_utils import require_auth # This will add the require_auth function, cool: two levels deep
+from db import get_connection # this will add the get_connection function
 
 # blueprint = A blueprint is a template for generating a "section" of a web application.
 # request = A method to GET, POST, PUT. Looking at the code below at the words: 'request'

@@ -1,7 +1,7 @@
 import base64 #Googled: decode API key for a user ID, sorry. Wanted to know.
 from functools import wraps # Makes lovely wraps to eat? Hehe. Googled: Preserves functions metadata when wrapping it
 from flask import request, jsonify, g # oh no, not again. request data, send JSON and get or it stores user info
-from ..db import get_connection # db connection from utils
+from db import get_connection # db connection from utils
 
 # the function needed to auth
 def require_auth(func):

@@ -1,6 +1,6 @@
 import base64 #Googled: decode API key for a user ID, sorry. Wanted to know.
 from flask import Blueprint, request, jsonify # Cocaine line of tools: handling requests and mutch more
-from ..db import get_connection # db connection
+from db import get_connection # db connection
  
 auth_bp = Blueprint('auth', __name__, url_prefix='/auth') # blueprint for auth... but what. Not sure.
  

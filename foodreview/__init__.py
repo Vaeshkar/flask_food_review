@@ -1,5 +1,5 @@
 from flask import Flask # grab the class Flask from the flask module
-from .routes import auth_bp, restaurants_bp # grab the following blueprints from the routes directory
+from routes import auth_bp, restaurants_bp # grab the following blueprints from the routes directory
  
 def create_app():
     app = Flask(__name__, instance_relative_config=True)
