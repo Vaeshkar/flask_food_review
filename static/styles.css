@@ -77,9 +77,9 @@ main {
 .small_grid ul {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 1rem; /* spacing between the grid items */
+    gap: 1rem; 
     padding: 0;
-    list-style: none; /* optional: removes the default bullet points */
+    list-style: none; 
 }
 
 .small_grid li {
