@@ -2,38 +2,43 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <!-- Deploy CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='reset.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <!-- Activate before deploy -->
+
+    <!-- Local Development purpose -->
+<!--     <link rel="stylesheet" href="../static/reset.css">
+    <link rel="stylesheet" href="../static/styles.css"> -->
+    <!-- Disable before deploy -->
+
     <title>FoodReview API</title>
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            background-color: #f5f5f5;
-            color: #333;
-            text-align: center;
-            padding: 50px;
-        }
-        h1 {
-            color: #0066cc;
-        }
-        p {
-            font-size: 18px;
-        }
-        .note {
-            font-style: italic;
-            margin-top: 20px;
-            color: #777;
-        }
-    </style>
 </head>
 <body>
-    <h1>🍴 FoodReview API</h1>
-    <p>Welcome to the FoodReview backend service!</p>
-    <p>This API allows users to:</p>
-    <ul style="list-style-type: none; padding: 0;">
-        <li>✅ Register and log in</li>
-        <li>✅ Add restaurants</li>
-        <li>✅ Submit reviews</li>
-        <li>✅ Discover new dining spots</li>
-    </ul>
-    <p class="note">This is a backend project — no frontend interface yet. Use Postman or a frontend app to interact.</p>
+    <header>
+        <!-- <img src="{{ url_for('static', filename='images/fr_hero_img.png') }}" alt="FoodReview Banner"> -->
+         <div class="hero_copy">
+            <h1>Welcome to the FoodReview API</h1>
+            <p>Discover and share restaurant experiences through our community-driven platform.</p>
+        </div>
+    </header>
+    <main>
+        <p>This API allows users to:</p>
+        <div class="small_grid">
+            <ul>
+                <li>🍽️ Register and log in</li>
+                <li>🍽️ Add restaurants</li>
+                <li>🍽️ Submit reviews</li>
+                <li>🍽️ Discover new dining spots</li>
+            </ul>
+        </div>
+        <div class="note">
+            <p>This is a backend project — no frontend interface yet.</p>
+            <p>Use Postman or a frontend app to interact.</p>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2025 WBS Coding School</p>
+    </footer>
 </body>
 </html>
