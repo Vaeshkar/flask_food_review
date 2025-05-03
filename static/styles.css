@@ -1,7 +1,8 @@
 :root {
     --primary-color: #fef0d8;
-    --secondary-color: #fddd9f;
+    --secondary-color: #fdac65;
     --font-color: #566751;
+    --font-color-dark: #222820;
     --bento-color: #da6b23;
     --headline-color: #da6b23;
 }
@@ -22,7 +23,7 @@ body {
     background-color: var(--primary-color);
 
     font-family: 'Helvetica Neue', Arial, sans-serif;
-    color: var(--font-color);
+    color: var(--font-color-dark);
     text-align: center;
     font-size: 1.2rem;
 }
@@ -85,6 +86,7 @@ main {
 .small_grid li {
     background-color: var(--bento-color);
     color: var(--primary-color);
+    font-weight: 700;
     padding: 4rem 1rem;
     border-radius: 0.5rem;
     font-size: 1.4rem;
@@ -94,7 +96,7 @@ main {
 .note {
     max-width: 80vw;
     background-color: var(--font-color);
-    border-radius: 1rem;
+    border-radius: 0.5rem;
     padding: 2rem 4rem;
     color: var(--primary-color);
 
@@ -109,6 +111,7 @@ footer {
     max-width: 1200px;
     padding: 1.2rem 2rem;
     margin: 1.2rem auto 0;
+    border-radius: 0.8rem 0.8rem 0 0;
 }
 
 /* Resonsive Mobile settings */
